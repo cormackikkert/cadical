@@ -501,6 +501,10 @@ bool Solver::is_valid_limit (const char * arg) {
   return Internal::is_valid_limit (arg);
 }
 
+double Solver::get_score(int lit) {
+    return external->get_score(lit);
+}
+
 void Solver::prefix (const char * str) {
   LOG_API_CALL_BEGIN ("prefix", str);
   REQUIRE_VALID_OR_SOLVING_STATE ();

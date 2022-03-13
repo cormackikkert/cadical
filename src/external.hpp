@@ -246,7 +246,7 @@ struct External {
   // reset immediately at the end of 'External::solve'.
 
   void reset_limits ();
-
+    double get_score(int lit); 
   /*----------------------------------------------------------------------*/
 
   // Proxies to IPASIR functions.

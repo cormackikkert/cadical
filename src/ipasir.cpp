@@ -45,4 +45,7 @@ void ipasir_set_learn (void * solver,
   ccadical_set_learn ((CCaDiCaL*) solver, state, max_length, learn);
 }
 
+double ipasir_get_score(void * solver, int lit) {
+    return ccadical_get_score((CCaDiCaL*) solver, lit);
+}
 }

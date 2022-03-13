@@ -29,6 +29,7 @@ void ipasir_set_learn (void * solver,
                        void * state, int max_length,
 		       void (*learn)(void * state, int * clause));
 
+double ipasir_get_score(void * solver, int lit);
 /*------------------------------------------------------------------------*/
 #ifdef __cplusplus
 }

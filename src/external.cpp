@@ -91,6 +91,10 @@ void External::reset_limits () {
   internal->reset_limits ();
 }
 
+double External::get_score (int lit) {
+    return internal->stab[lit];
+}
+
 /*------------------------------------------------------------------------*/
 
 int External::internalize (int elit) {

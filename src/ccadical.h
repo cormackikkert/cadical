@@ -29,6 +29,8 @@ void ccadical_set_terminate (CCaDiCaL *,
 void ccadical_set_learn (CCaDiCaL *,
   void * state, int max_length, void (*learn)(void * state, int * clause));
 
+double ccadical_get_score(CCaDiCaL *, int lit);
+
 /*------------------------------------------------------------------------*/
 
 // Non-IPASIR conformant 'C' functions.

@@ -45,5 +45,5 @@ void Internal::shuffle_scores () {
     scores.push_back (idx);
   }
 }
-
 }
+

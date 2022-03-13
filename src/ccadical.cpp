@@ -145,6 +145,10 @@ int ccadical_fixed (CCaDiCaL * wrapper, int lit) {
   return ((Wrapper*) wrapper)->solver->fixed (lit);
 }
 
+double ccadical_get_score(CCaDiCaL * wrapper, int lit) {
+    return ((Wrapper*) wrapper)->solver->get_score(abs(lit));
+}
+
 void ccadical_set_terminate (CCaDiCaL * ptr,
                              void * state, int (*terminate)(void *)) {
   Wrapper * wrapper = (Wrapper *) ptr;
