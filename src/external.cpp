@@ -92,7 +92,11 @@ void External::reset_limits () {
 }
 
 double External::get_score (int lit) {
-    return internal->stab[lit];
+    if (internal->use_scores()) {
+        return internal->score(lit);
+    } else {
+        return (double) internal->bumped(lit);
+    }
 }
 
 /*------------------------------------------------------------------------*/
