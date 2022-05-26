@@ -584,6 +584,8 @@ public:
   int fixed (int lit) const;
 
   double get_score(int lit);
+  bool get_score_state();
+  double get_stab(int lit);
   //------------------------------------------------------------------------
   // Force the default decision phase of a variable to a certain value.
   //

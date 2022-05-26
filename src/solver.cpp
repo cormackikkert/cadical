@@ -505,6 +505,13 @@ double Solver::get_score(int lit) {
     return external->get_score(lit);
 }
 
+bool Solver::get_score_state() {
+    return internal->use_scores();
+}
+
+double Solver::get_stab(int lit) {
+    return internal->score(lit);
+}
 void Solver::prefix (const char * str) {
   LOG_API_CALL_BEGIN ("prefix", str);
   REQUIRE_VALID_OR_SOLVING_STATE ();

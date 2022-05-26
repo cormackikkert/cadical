@@ -30,6 +30,8 @@ void ipasir_set_learn (void * solver,
 		       void (*learn)(void * state, int * clause));
 
 double ipasir_get_score(void * solver, int lit);
+double ipasir_get_stab(void * solver, int lit);
+bool ipasir_get_score_state(void* solver);
 /*------------------------------------------------------------------------*/
 #ifdef __cplusplus
 }

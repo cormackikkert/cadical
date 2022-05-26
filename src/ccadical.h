@@ -30,6 +30,8 @@ void ccadical_set_learn (CCaDiCaL *,
   void * state, int max_length, void (*learn)(void * state, int * clause));
 
 double ccadical_get_score(CCaDiCaL *, int lit);
+bool ccadical_get_score_state(CCaDiCaL *);
+double ccadical_get_stab(CCaDiCaL *, int lit);
 
 /*------------------------------------------------------------------------*/
 
